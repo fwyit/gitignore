@@ -11,22 +11,22 @@ the following resources are a great place to start:
 - The [Ignoring Files article][help] on the GitHub Help site.
 - The [gitignore(5)][man] manual page.
 
-[man]: http://git-scm.com/docs/gitignore
+[man]: https://git-scm.com/docs/gitignore
 [help]: https://help.github.com/articles/ignoring-files
-[chapter]: https://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository#_ignoring
-[progit]: http://git-scm.com/book
+[chapter]: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository#_ignoring
+[progit]: https://git-scm.com/book
 
 ## Folder structure
 
 We support a collection of templates, organized in this way:
 
-- the root folder contains templates in common use, to help people get started
+- The root folder contains templates in common use, to help people get started
   with popular programming languages and technologies. These define a meaningful
   set of rules to help get started, and ensure you are not committing
-  unimportant files into your repository
+  unimportant files into your repository.
 - [`Global`](./Global) contains templates for various editors, tools and
   operating systems that can be used in different situations. It is recommended
-  that you either [add these to your global template](https://help.github.com/articles/ignoring-files/#create-a-global-gitignore)
+  that you either [add these to your global template](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files#configuring-ignored-files-for-all-repositories-on-your-computer)
   or merge these rules into your project-specific templates if you want to use
   them permanently.
 - [`community`](./community) contains specialized templates for other popular
@@ -50,8 +50,7 @@ If you have a small set of rules, or want to support a technology that is not
 widely in use, and still believe this will be helpful to others, please read the
 section about [specialized templates](#specialized-templates) for more details.
 
-If you believe your template is important and should be highly visible, please
-add details about the impact of the technology when you open a pull request. We
+Include details when opening pull request if the template is important and visible. We
 may not accept it immediately, but we can promote it to the root at a later date
 based on interest.
 
@@ -113,11 +112,11 @@ folder that best suits where it belongs.
 
 The rules in your specialized template should be specific to the framework or
 tool, and any additional templates should be mentioned in a comment in the
-header of the template
+header of the template.
 
 For example, this template might live at `community/DotNet/InforCRM.gitignore`:
 
-```
+```gitignore
 # gitignore template for InforCRM (formerly SalesLogix)
 # website: https://www.infor.com/product-summary/cx/infor-crm/
 #
@@ -142,7 +141,7 @@ Here’s how we suggest you go about proposing a change to this project:
 1. [Fork this project][fork] to your account.
 2. [Create a branch][branch] for the change you intend to make.
 3. Make your changes to your fork.
-4. [Send a pull request][pr] from your fork’s branch to our `master` branch.
+4. [Send a pull request][pr] from your fork’s branch to our `main` branch.
 
 Using the web-based interface to make changes is fine too, and will help you
 by automatically forking the project and prompting to send a pull request too.
